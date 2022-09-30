@@ -31,14 +31,19 @@ header {
   color: #fff;
   padding: 5px;
   margin-bottom: 40px;
+  div{
+    width:900px !important;
+  }
+  a {
+    color: #fff;
+    width: fit-content;
+   }
 }
 
-header a {
-  color: #fff;
-}
+  
 
-.container {
-   max-width: 50%;
+.container { 
+  width: 75%;
   margin: auto;
   overflow: auto;
   padding: 0 10px;
@@ -125,8 +130,18 @@ ol {
   line-height: 2.3;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .posts {
     grid-template-columns: 1fr;
+  }
+  body{
+    overflow: hidden;
+    width: 100%;
+  }
+  header{
+    overflow: hidden;
+  }
+  .container {
+     width: 100%;
   }
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
